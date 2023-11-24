@@ -1,4 +1,4 @@
-# Hello,
+# Aaron Gazzola's Portfolio
 
 I'm Aaron, I've been making web apps with node for over 4 years, I specialize in Next.js (v13) with TypeScript.
 
