@@ -1,3 +1,21 @@
+Hi I'm Aaron, I've been making web apps with node for over 4 years, I specialize in Next.js (v13) with TypeScript.
+
+Gazzola.dev is a portfolio website designed to demonstate:
+
+- Rich text editing with Lexical.
+- AI integration with the OpenAI APIs
+- 3d rendering with Three.js
+- Styling with tailwind
+- Database management with Prisma and Postgres
+
+See below for a more detailed description.
+
+Thanks for visiting!
+
+Aaron.
+
+# Next.js basics:
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
