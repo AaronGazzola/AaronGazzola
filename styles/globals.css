@@ -4,25 +4,20 @@
 @import "./fonts.css";
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+  --brand-color-100: #d9ed92;
+  --brand-color-200: #b5e48c;
+  --brand-color-300: #99d98c;
+  --brand-color-400: #76c893;
+  --brand-color-500: #52b69a;
+  --brand-color-600: #34a0a4;
+  --brand-color-700: #168aad;
+  --brand-color-800: #1a759f;
+  --brand-color-900: #1e6091;
+  --brand-color-1000: #184e77;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --background-color: #f2e9e4;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: var(--background-color);
 }
