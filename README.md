@@ -1,16 +1,14 @@
 # Aaron Gazzola's Portfolio
 
-I'm Aaron, I've been making web apps with node for over 4 years, I specialize in Next.js (v13) with TypeScript.
+I'm Aaron, I've been making web apps with node for over 4 years, I specialize in Next.js with TypeScript.
 
-Gazzola.dev is a portfolio website designed to demonstate:
+Gazzola.dev provides a client contact form that demonstates:
 
 - Rich text editing with Lexical.
-- AI integration with the OpenAI APIs
-- 3d rendering with Three.js
+- AI integration with OpenAI APIs
+- Email sending with AWS SES
 - Styling with tailwind
 - Database management with Prisma and Postgres
-
-See below for a more detailed description.
 
 Thanks for visiting!
 
