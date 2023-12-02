@@ -1,16 +1,14 @@
-# Aaron Gazzola's Portfolio
+# Aaron Gazzola contact form
 
-I'm Aaron, I've been making web apps with node for over 4 years, I specialize in Next.js with TypeScript.
+Gazzola.dev provides a client contact form built with my prefered stack:
 
-Gazzola.dev provides a client contact form that demonstates:
+- [x] Rich text editing with Lexical.
+- [x] Email sending with AWS SES
+- [x] Styling with tailwind
+- [ ] AI integration with OpenAI APIs
+- [ ] Database management with Prisma and Postgres
 
-- Rich text editing with Lexical.
-- AI integration with OpenAI APIs
-- Email sending with AWS SES
-- Styling with tailwind
-- Database management with Prisma and Postgres
-
-Thanks for visiting!
+Keep posted for updates, thanks for visiting!
 
 Aaron.
 
