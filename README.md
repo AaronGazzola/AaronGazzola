@@ -1,6 +1,6 @@
 # Gazzola.dev client contact form
 
-Gazzola.dev is a client contact form for full-stack TypeScript development with Next.js. This app features:
+Gazzola.dev is a client contact form for full-stack TypeScript development with Next.js by Aaron Gazzola. This app features:
 
 - Rich text editing with Lexical.
 - Email sending with AWS SES
