@@ -1,18 +1,18 @@
-# Aaron Gazzola contact form
+# Gazzola.dev client contact form
 
-Gazzola.dev provides a client contact form built with my prefered stack:
+Gazzola.dev is a client contact form for full-stack TypeScript development with Next.js. This app features:
 
-- [x] Rich text editing with Lexical.
-- [x] Email sending with AWS SES
-- [x] Styling with tailwind
-- [ ] AI integration with OpenAI APIs
-- [ ] Database management with Prisma and Postgres
+- Rich text editing with Lexical.
+- Email sending with AWS SES
+- Styling with tailwind
+- AI integration with OpenAI APIs
+- AutoSave with Prisma and Postgres
 
-Keep posted for updates, thanks for visiting!
+Feel free explore, I welcome any feedback. Thanks for visiting!
 
 Aaron.
 
-# Next.js basics:
+# Next.js boilerplate:
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
