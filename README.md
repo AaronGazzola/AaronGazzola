@@ -12,7 +12,7 @@ Feel free explore, I welcome any feedback. Thanks for visiting!
 
 Aaron.
 
-# Next.js boilerplate:
+## Next.js boilerplate:
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
