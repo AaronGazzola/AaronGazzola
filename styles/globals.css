@@ -22,7 +22,7 @@ body {
 }
 
 .bg-image {
-  animation: zoom 1.5s ease-in-out forwards;
+  animation: zoom 1.5s ease-out forwards;
 }
 
 .bg-overlay {
