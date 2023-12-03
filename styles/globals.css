@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import "./fonts.css";
+@import "./animations.css";
 
 :root {
   --brand-color-100: #d9ed92;
@@ -14,10 +15,16 @@
   --brand-color-800: #1a759f;
   --brand-color-900: #1e6091;
   --brand-color-1000: #184e77;
-
-  --background-color: #f2e9e4;
 }
 
 body {
-  background: var(--background-color);
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.bg-image {
+  animation: zoom 1.5s ease-in-out forwards;
+}
+
+.bg-overlay {
+  animation: partialFadeOut 1.5s ease-in-out forwards;
 }

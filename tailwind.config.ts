@@ -1,17 +1,5 @@
 import type { Config } from "tailwindcss";
 
-const fontFallbacks = [
-  "Inter",
-  "system-ui",
-  "-apple-system",
-  "BlinkMacSystemFont",
-  "Segoe UI",
-  "Roboto",
-  "Helvetica Neue",
-  "Arial",
-  "sans-serif",
-];
-
 const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -33,12 +21,20 @@ const config: Config = {
           900: "var(--brand-color-900)",
           1000: "var(--brand-color-1000)",
         },
-        background: "var(--background-color)",
       },
       fontFamily: {
-        sans: fontFallbacks,
-        brand: ["Inconsolata", ...fontFallbacks],
-        expanded: ["InconsolataExpanded", ...fontFallbacks],
+        sans: [
+          "Source Sans 3",
+          "Inter",
+          "system-ui",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "Segoe UI",
+          "Roboto",
+          "Helvetica Neue",
+          "Arial",
+          "sans-serif",
+        ],
       },
     },
   },
