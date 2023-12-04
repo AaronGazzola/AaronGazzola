@@ -3,6 +3,7 @@ import "styles/globals.css";
 import Navbar from "./UI/Navbar/Navbar";
 import Footer from "./UI/Footer/Footer";
 import BackgroundImage from "./UI/BackgroundImage";
+import { LayoutContextProvider } from "@/context/layoutContext";
 
 export const metadata: Metadata = {
   title: "Gazzola Development",
@@ -16,11 +17,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="text-brand-900 sans min-h-screen flex flex-col items-center justify-between">
-        <Navbar />
-        {children}
-        <Footer />
-        <BackgroundImage />
+      <body className="text-brand-900 sans flex flex-col items-center justify-between min-h-screen">
+        <LayoutContextProvider>
+          <Navbar />
+          {children}
+          <Footer />
+          <BackgroundImage />
+        </LayoutContextProvider>
       </body>
     </html>
   );

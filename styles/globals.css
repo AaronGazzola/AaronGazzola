@@ -6,7 +6,7 @@
 
 :root {
   --brand-color-100: #d9ed92;
-  --brand-color-200: #b5e48c;
+  --brand-color-200: #64804c;
   --brand-color-300: #99d98c;
   --brand-color-400: #76c893;
   --brand-color-500: #52b69a;
@@ -27,4 +27,8 @@ body {
 
 .bg-overlay {
   animation: partialFadeOut 1.5s ease-in-out forwards;
+}
+
+.expand {
+  animation: expand 2s ease-in-out 0.5s forwards;
 }
