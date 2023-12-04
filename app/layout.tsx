@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="text-brand-900 sans flex flex-col items-center justify-between min-h-screen">
+      <body className="text-gray-200 sans flex flex-col items-center justify-between min-h-screen">
         <LayoutContextProvider>
           <Navbar />
           {children}
