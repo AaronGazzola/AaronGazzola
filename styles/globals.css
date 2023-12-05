@@ -1,34 +1,45 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 @import "./fonts.css";
 @import "./animations.css";
 
-:root {
-  --brand-color-100: #d9ed92;
-  --brand-color-200: #64804c;
-  --brand-color-300: #99d98c;
-  --brand-color-400: #76c893;
-  --brand-color-500: #52b69a;
-  --brand-color-600: #34a0a4;
-  --brand-color-700: #168aad;
-  --brand-color-800: #1a759f;
-  --brand-color-900: #1e6091;
-  --brand-color-1000: #184e77;
-}
-
 body {
-  font-family: "Source Sans 3", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  color: black;
+  font-weight: 600;
 }
 
-.bg-image {
-  animation: zoom 1.5s ease-out forwards;
+.title {
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 0 0 1rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
 }
 
-.bg-overlay {
-  animation: partialFadeOut 1.5s ease-in-out forwards;
+.subtitle {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 0.9rem;
+  line-height: 2;
+  font-weight: 500;
 }
 
-.expand {
-  animation: expand 1.5s ease-in-out 0.7s forwards;
+.glass {
+  backdrop-filter: blur(10px);
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.7);
+}
+
+.footer-text {
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: white;
 }

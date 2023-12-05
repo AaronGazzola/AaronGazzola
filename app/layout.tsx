@@ -17,9 +17,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="text-gray-200 sans flex flex-col items-center justify-between min-h-screen">
+      <head>
+        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+        <link rel="alternate icon" href="/icon.ico" />
+      </head>
+      <body className="text-gray-200 sans flex flex-col items-center justify-between h-screen">
         <LayoutContextProvider>
-          <Navbar />
           {children}
           <Footer />
           <BackgroundImage />

@@ -1,3 +1,12 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes partialFadeOut {
   from {
     opacity: 1;
@@ -28,8 +37,28 @@
   100% {
     opacity: 1;
     transform: scaleY(1);
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
     box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.5);
   }
+}
+
+.bg-image {
+  animation: zoom 1.5s ease-out forwards;
+}
+
+.bg-overlay {
+  animation: partialFadeOut 1.5s ease-in-out forwards;
+}
+
+.expand {
+  animation: expand 1.5s ease-in-out 0.7s forwards;
+}
+
+.fade-in-layout {
+  animation: fadeIn 1.5s ease 1s forwards;
+}
+
+.fade-in-content {
+  animation: fadeIn 1s ease 1.7s forwards;
 }

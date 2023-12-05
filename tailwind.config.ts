@@ -8,19 +8,8 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      colors: {
-        brand: {
-          100: "var(--brand-color-100)",
-          200: "var(--brand-color-200)",
-          300: "var(--brand-color-300)",
-          400: "var(--brand-color-400)",
-          500: "var(--brand-color-500)",
-          600: "var(--brand-color-600)",
-          700: "var(--brand-color-700)",
-          800: "var(--brand-color-800)",
-          900: "var(--brand-color-900)",
-          1000: "var(--brand-color-1000)",
-        },
+      fontSize: {
+        xxl: "2rem",
       },
       fontFamily: {
         sans: [
