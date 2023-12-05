@@ -18,7 +18,7 @@ const BackgroundImage = () => {
         alt="Background image"
         width={7319}
         height={3910}
-        onLoadingComplete={() => onBgLoad()}
+        onLoad={onBgLoad}
       />
     </div>
   );

@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <div
       className={[
-        "flex text-sm footer-text py-4 opacity-0",
+        "flex text-sm footer-text pb-4 pt-5 opacity-0",
         bgIsLoaded ? "fade-in-layout" : "",
       ].join(" ")}
     >

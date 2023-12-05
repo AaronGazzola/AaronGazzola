@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import "styles/globals.css";
-import Navbar from "./UI/Navbar/Navbar";
-import Footer from "./UI/Footer/Footer";
-import BackgroundImage from "./UI/BackgroundImage";
+import Navbar from "../UI/Navbar";
+import Footer from "../UI/Footer";
+import BackgroundImage from "../UI/BackgroundImage";
 import { LayoutContextProvider } from "@/context/layoutContext";
+import Header from "@/UI/Header";
 
 export const metadata: Metadata = {
   title: "Gazzola Development",
@@ -23,6 +24,7 @@ export default function RootLayout({
       </head>
       <body className="text-gray-200 sans flex flex-col items-center justify-between h-screen">
         <LayoutContextProvider>
+          <Header />
           {children}
           <Footer />
           <BackgroundImage />

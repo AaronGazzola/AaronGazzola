@@ -2,7 +2,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "./fonts.css";
 @import "./animations.css";
 
 body {
@@ -11,20 +10,9 @@ body {
   font-weight: 600;
 }
 
-.title {
-  font-weight: 600;
-  line-height: 1.5;
-  margin: 0 0 1rem 0;
+.expanded {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-}
-
-.subtitle {
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  font-size: 0.9rem;
-  line-height: 2;
-  font-weight: 500;
 }
 
 .glass {
