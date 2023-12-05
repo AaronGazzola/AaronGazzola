@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
+/* @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600"); */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 @import "./animations.css";
+@import "./fonts.css";
 
 body {
   font-family: "Source Sans Pro", sans-serif;
@@ -20,7 +21,7 @@ body {
 }
 
 .text-shadow {
-  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.7);
+  text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.7);
 }
 
 .footer-text {

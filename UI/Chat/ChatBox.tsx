@@ -8,15 +8,15 @@ const ChatBox = () => {
   return (
     <div
       className={[
-        "grow rounded border border-b-gray-900 border-r-gray-800 border-t-gray-600 border-l-gray-700 opacity-0 w-full flex flex-col items-center py-4 px-8",
+        "grow rounded border border-b-gray-900 border-r-gray-800 border-t-gray-600 border-l-gray-700 opacity-0 w-full flex flex-col items-center py-4 px-4 sm:px-8 max-w-[780px]",
         bgIsLoaded ? "expand" : "",
       ].join(" ")}
     >
       <div
         className={[
-          "w-full h-full flex flex-col items-left",
+          "w-full h-full flex flex-col items-left opacity-0",
           bgIsLoaded ? "fade-in-content" : "",
-        ].join("")}
+        ].join(" ")}
       >
         <Message />
       </div>
