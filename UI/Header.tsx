@@ -8,7 +8,7 @@ const Header = () => {
     <>
       <div
         className={[
-          "flex flex-col items-center my-5 px-5 sm:mb-7 opacity-0 text-center uppercase",
+          "flex flex-col items-center my-5 px-5 sm:mb-6 opacity-0 text-center uppercase",
           bgIsLoaded ? "fade-in-layout" : "",
         ].join(" ")}
       >

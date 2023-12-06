@@ -2,6 +2,7 @@
 import { LayoutContext } from "@/context/layoutContext";
 import Image from "next/image";
 import { useContext } from "react";
+
 const BackgroundImage = () => {
   const { bgIsLoaded, onBgLoad } = useContext(LayoutContext);
   return (
