@@ -1,7 +1,7 @@
 "use client";
 import { LayoutContext } from "@/context/layoutContext";
 import { useContext } from "react";
-import Message from "./Message";
+import Message, { Role } from "./Message";
 
 const ChatBox = () => {
   const { bgIsLoaded } = useContext(LayoutContext);
@@ -18,7 +18,8 @@ const ChatBox = () => {
           bgIsLoaded ? "fade-in-content" : "",
         ].join(" ")}
       >
-        <Message />
+        <Message role={Role.AI} />
+        <Message role={Role.User} />
       </div>
     </div>
   );

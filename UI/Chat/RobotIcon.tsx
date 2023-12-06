@@ -1,8 +1,8 @@
-const RobotIcon = ({ iconClassName }: { iconClassName?: string }) => {
+const RobotIcon = ({ iconClassName = "" }: { iconClassName?: string }) => {
   return (
-    <div className="relative w-5 h-5 overflow-visible">
+    <div className="relative w-6 h-6 overflow-visible">
       <svg
-        className={`absolute inset-0 stroke-none fill-gray-200 w-5 h-5 ${iconClassName}`}
+        className={`absolute w-full h-full stroke-none fill-gray-200 ${iconClassName}`}
         width="800px"
         height="800px"
         viewBox="0 0 24 24"
@@ -19,7 +19,7 @@ const RobotIcon = ({ iconClassName }: { iconClassName?: string }) => {
       </svg>
 
       <svg
-        className={`-z-10 absolute inset-0 stroke-none fill-gray-700 w-5 h-5 transform translate-y-[2px] ${iconClassName}`}
+        className={`-z-10 absolute w-full h-full inset-0 stroke-none fill-gray-700 transform translate-y-[2px] ${iconClassName}`}
         width="800px"
         height="800px"
         viewBox="0 0 24 24"
