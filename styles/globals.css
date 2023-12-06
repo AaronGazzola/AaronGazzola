@@ -23,6 +23,10 @@ body {
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
 }
 
+.text-shadow-sm {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+}
+
 .footer-text {
   font-size: 0.8rem;
   font-weight: 300;
