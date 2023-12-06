@@ -8,7 +8,7 @@ const ChatBox = () => {
   return (
     <div
       className={[
-        "grow rounded border border-b-gray-900 border-r-gray-800 border-t-gray-600 border-l-gray-700 opacity-0 w-full flex flex-col items-center py-4 px-4 sm:px-8 max-w-[780px]",
+        "grow rounded border border-b-gray-900 border-r-gray-800 border-t-gray-600 border-l-gray-700 opacity-0 w-full flex flex-col items-center pt-6 px-7 sm:px-10 sm:pt-8 max-w-xl",
         bgIsLoaded ? "expand" : "",
       ].join(" ")}
     >
