@@ -11,11 +11,11 @@ const Message = ({ role }: { role: Role }) => {
   const isAdmin = role == Role.Admin;
   const isAI = role == Role.AI;
   return (
-    <div className="w-full relative mb-10">
+    <div className="w-full relative mb-10 first:mt-5">
       <div className="relative w-full">
         <div className="flex items-center">
           {isAI ? <RobotIcon /> : <UserIcon />}
-          <h2 className="tracking-widest font-semibold text-xl ml-3 text-gray-200 text-shadow-sm">
+          <h2 className="tracking-wider font-semibold text-xl ml-3 text-gray-200 text-shadow-sm mb-1">
             {isAI ? "AI" : "You"}
           </h2>
         </div>
@@ -24,7 +24,7 @@ const Message = ({ role }: { role: Role }) => {
           <hr className="border-black opacity-10 absolute w-full top-[2px] -z-10" />
         </div>
       </div>
-      <p className="text-lg font-semibold tracking-widest text-shadow text-gray-300">
+      <p className="text-lg font-semibold tracking-wider text-shadow text-gray-300 pt-1">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, enim
         ullam nam adipisci assumenda vel ab, illo sunt obcaecati provident omnis
         tempora maiores in eligendi? Consequatur hic molestiae sed ratione?

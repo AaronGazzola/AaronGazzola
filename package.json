@@ -9,7 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@lexical/clipboard": "^0.12.4",
+    "@lexical/react": "^0.12.4",
+    "@lexical/rich-text": "^0.12.4",
+    "@lexical/selection": "^0.12.4",
     "@types/three": "^0.158.3",
+    "lexical": "^0.12.4",
     "next": "14.0.3",
     "react": "^18",
     "react-dom": "^18",

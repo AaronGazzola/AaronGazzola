@@ -1,13 +1,12 @@
-/* @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600"); */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 @import "./animations.css";
 @import "./fonts.css";
 
-body {
-  font-family: "Source Sans Pro", sans-serif;
-  color: black;
+:root {
+  --color-scrollbar-thumb: #bdc3c7;
+  --color-scrollbar-track: rgba(0, 0, 0, 0.15);
 }
 
 .expanded {
@@ -20,7 +19,7 @@ body {
 }
 
 .text-shadow {
-  text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
 }
 
 .text-shadow-sm {
@@ -34,4 +33,20 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   color: white;
+}
+
+@layer utilities {
+  .scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-scrollbar-thumb) var(--color-scrollbar-track);
+  }
+  .scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+  .scrollbar-track::-webkit-scrollbar-track {
+    background: var(--color-scrollbar-track);
+  }
+  .scrollbar-thumb::-webkit-scrollbar-thumb {
+    background-color: var(--color-scrollbar-thumb);
+  }
 }

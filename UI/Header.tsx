@@ -12,10 +12,10 @@ const Header = () => {
           bgIsLoaded ? "fade-in-layout" : "",
         ].join(" ")}
       >
-        <h1 className="text-xxl sm:text-xxxl mb-2 p-0 expanded font-semibold">
+        <h1 className="text-xxl sm:text-xxxl mb-2 p-0 expanded font-semibold font-brand">
           Aaron Gazzola
         </h1>
-        <p className="font-thin tracking-widest text-sm sm:text-base">
+        <p className="font-thin tracking-widest text-sm sm:text-base font-brand">
           Full-stack TypeScript Development
         </p>
       </div>

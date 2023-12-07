@@ -1,5 +1,17 @@
 import type { Config } from "tailwindcss";
 
+const fontFallbacks = [
+  "Inter",
+  "system-ui",
+  "-apple-system",
+  "BlinkMacSystemFont",
+  "Segoe UI",
+  "Roboto",
+  "Helvetica Neue",
+  "Arial",
+  "sans-serif",
+];
+
 const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -20,18 +32,8 @@ const config: Config = {
         xxxl: "2rem",
       },
       fontFamily: {
-        sans: [
-          "Source Sans Pro",
-          "Inter",
-          "system-ui",
-          "-apple-system",
-          "BlinkMacSystemFont",
-          "Segoe UI",
-          "Roboto",
-          "Helvetica Neue",
-          "Arial",
-          "sans-serif",
-        ],
+        sans: fontFallbacks,
+        brand: ["Source Sans Pro", ...fontFallbacks],
       },
     },
   },
