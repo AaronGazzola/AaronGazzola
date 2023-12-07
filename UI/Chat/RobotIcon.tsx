@@ -1,6 +1,6 @@
 const RobotIcon = ({ iconClassName = "" }: { iconClassName?: string }) => {
   return (
-    <div className="relative w-6 h-6 overflow-visible">
+    <div className="relative w-5 h-5 overflow-visible">
       <svg
         className={`absolute w-full h-full stroke-none fill-gray-200 ${iconClassName}`}
         width="800px"

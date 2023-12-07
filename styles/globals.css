@@ -5,7 +5,7 @@
 @import "./fonts.css";
 
 :root {
-  --color-scrollbar-thumb: #bdc3c7;
+  --color-scrollbar-thumb: rgba(255, 255, 255, 0.3);
   --color-scrollbar-track: rgba(0, 0, 0, 0.15);
 }
 

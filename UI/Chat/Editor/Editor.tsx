@@ -31,20 +31,22 @@ const Editor = () => {
   };
 
   return (
-    <div className="relative border">
-      <LexicalComposer initialConfig={initialConfig}>
-        <RichTextPlugin
-          contentEditable={<ContentEditable />}
-          placeholder={
-            <div className="-z-10 absolute top-0 left-0">
-              Enter some text...
-            </div>
-          }
-          ErrorBoundary={LexicalErrorBoundary}
-        />
-        <HistoryPlugin />
-        <OnChangePlugin onChange={onChange} />
-      </LexicalComposer>
+    <div className="pl-3 pb-3 ">
+      <div className="relative border">
+        <LexicalComposer initialConfig={initialConfig}>
+          <RichTextPlugin
+            contentEditable={<ContentEditable />}
+            placeholder={
+              <div className="-z-10 absolute top-0 left-0">
+                Enter some text...
+              </div>
+            }
+            ErrorBoundary={LexicalErrorBoundary}
+          />
+          <HistoryPlugin />
+          <OnChangePlugin onChange={onChange} />
+        </LexicalComposer>
+      </div>
     </div>
   );
 };
