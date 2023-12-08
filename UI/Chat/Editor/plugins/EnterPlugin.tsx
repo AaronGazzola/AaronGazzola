@@ -10,8 +10,9 @@ const EnterPlugin = ({ onEmit }: { onEmit: () => void }) => {
       (e) => {
         // const isModKey = e?.ctrlKey || e?.shiftKey || e?.metaKey;
         // if (!isModKey)
+        e?.preventDefault();
         onEmit();
-        return false;
+        return true;
       },
       COMMAND_PRIORITY_NORMAL
     );

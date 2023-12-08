@@ -10,6 +10,7 @@ import { $createParagraphNode, $getRoot, $isParagraphNode } from "lexical";
 // TODO:
 // Handle loading
 // Handle paragraph + mod key on enter
+// Fix empty paragraph on enter
 
 type Message = {
   id: string;
