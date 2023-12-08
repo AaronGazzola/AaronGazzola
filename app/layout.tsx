@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "styles/globals.css";
 import Footer from "../UI/Footer";
 import BackgroundImage from "../UI/BackgroundImage";
-import { LayoutContextProvider } from "@/context/layoutContext";
 import Header from "@/UI/Header";
 
 export const metadata: Metadata = {
@@ -22,12 +21,10 @@ export default function RootLayout({
         <link rel="alternate icon" href="/icon.ico" />
       </head>
       <body className="text-gray-200 flex flex-col items-center justify-between h-screen font-sans">
-        <LayoutContextProvider>
-          <Header />
-          {children}
-          <Footer />
-          <BackgroundImage />
-        </LayoutContextProvider>
+        <Header />
+        {children}
+        <Footer />
+        <BackgroundImage />
       </body>
     </html>
   );
