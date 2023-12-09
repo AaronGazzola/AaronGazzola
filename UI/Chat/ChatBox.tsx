@@ -37,7 +37,6 @@ const ChatBox = () => {
   const onEmit = useCallback(
     async (messageVar?: string[]) => {
       const msg = messageVar || message;
-      console.log(msg);
       setLoading(true);
       setMessages((prev) => [
         ...prev,
