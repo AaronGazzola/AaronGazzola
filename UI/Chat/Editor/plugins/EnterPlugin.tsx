@@ -8,8 +8,8 @@ const EnterPlugin = ({ onEmit }: { onEmit: () => void }) => {
     return editor.registerCommand(
       KEY_ENTER_COMMAND,
       (e) => {
-        // const isModKey = e?.ctrlKey || e?.shiftKey || e?.metaKey;
-        // if (!isModKey)
+        const isModKey = e?.ctrlKey || e?.shiftKey || e?.metaKey;
+        if (isModKey) return false;
         e?.preventDefault();
         onEmit();
         return true;

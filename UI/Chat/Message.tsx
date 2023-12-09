@@ -1,15 +1,17 @@
 import RobotIcon from "./RobotIcon";
 import UserIcon from "./UserIcon";
+import { Role } from "@/lib/constants";
 
 const Message = ({
   message,
-  isUser,
+  role,
   isNew = false,
 }: {
-  message: string;
-  isUser: boolean;
+  message: string[];
+  role: Role;
   isNew?: boolean;
 }) => {
+  const isUser = role === Role.User;
   return (
     <div className="w-full pb-10 pl-7 sm:pl-10">
       <div className="w-full">
@@ -25,7 +27,9 @@ const Message = ({
         </div>
       </div>
       <p className="text-base sm:text-lg font-medium tracking-wider text-shadow text-gray-300 pt-1">
-        {message}
+        {message.map((text, i) => (
+          <p key={i}>{text}</p>
+        ))}
       </p>
     </div>
   );

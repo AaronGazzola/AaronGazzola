@@ -1,63 +1,63 @@
 "use client";
 import Message from "./Message";
 import Editor, { OnEditorChange } from "./Editor/Editor";
-import { useEffect, useRef, useState } from "react";
-import { httpRequest } from "@/lib/interceptor";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { v4 as idGen } from "uuid";
 import { useLexicalComposerContext } from "@lexical/react/LexicalComposerContext";
-import { $createParagraphNode, $getRoot, $isParagraphNode } from "lexical";
+import { $getRoot, $isParagraphNode, LexicalNode } from "lexical";
+import { Method, Role } from "@/lib/constants";
 
 // TODO:
 // Handle loading
-// Handle paragraph + mod key on enter
-// Fix empty paragraph on enter
+// Handle read stream
 
 type Message = {
   id: string;
-  message: string;
+  message: string[];
   isUser: boolean;
   isNew?: boolean;
 };
 
 const ChatBox = () => {
   const [messages, setMessages] = useState<Message[]>([]);
-  const [message, setMessage] = useState("");
+  const [message, setMessage] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
   const scrollRef = useRef<HTMLDivElement | null>(null);
   const [editor] = useLexicalComposerContext();
 
-  const onEmit = () => {
+  const onEmit = useCallback(async () => {
+    if (!message) return;
     setLoading(true);
     setMessages((prev) => [...prev, { id: idGen(), isUser: true, message }]);
-    const t = message;
-    setMessage("");
-    editor.update(() => {
-      const root = $getRoot();
-      root.clear();
-      root.append($createParagraphNode());
-    });
-    httpRequest
-      .post("/api/chat", {
-        message: t,
-      })
-      .then(({ data }) => {
-        setMessages((prev) => [
-          ...prev,
-          { id: idGen(), isUser: false, message: data.message, isNew: true },
-        ]);
-      })
-      .catch((err) => {
-        // TODO: handle error
-        console.error(err.response?.data.message);
-      })
-      .finally(() => {
-        setLoading(false);
+    setMessage([]);
+    editor.update(() => $getRoot().clear());
+    try {
+      const res = await fetch("/api/chat", {
+        method: Method.Post,
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          message: message,
+        }),
       });
-  };
-
-  function clear() {
-    setMessages([]);
-  }
+      const data = await res.json();
+      setMessages((prev) => [
+        ...prev,
+        {
+          id: idGen(),
+          isUser: false,
+          message: data.message.split(`\n`),
+          isNew: true,
+        },
+      ]);
+    } catch (err: any) {
+      // TODO: handle error
+      console.error(err.response?.data.message);
+    } finally {
+      setLoading(false);
+    }
+  }, [editor, message]);
 
   function updateScroll() {
     var element = scrollRef.current;
@@ -67,14 +67,18 @@ const ChatBox = () => {
   }
 
   const onEditorChange: OnEditorChange = (editorState) => {
-    const paragraphContentArr: string[] = [];
-    editorState.read(() => [
-      editorState._nodeMap.forEach((node) => {
-        if ($isParagraphNode(node))
-          paragraphContentArr.push(node.getTextContent());
-      }),
-    ]);
-    setMessage(paragraphContentArr.join(""));
+    let paragraphTextArr: string[] = [];
+    editorState.read(() => {
+      const root = $getRoot();
+      paragraphTextArr = root
+        .getChildren()
+        .reduce((arr: string[], child: LexicalNode) => {
+          if ($isParagraphNode(child))
+            arr.push(...child.getTextContent().split("\n"));
+          return arr;
+        }, []);
+    });
+    setMessage(paragraphTextArr);
   };
 
   useEffect(updateScroll, [messages]);
@@ -89,7 +93,7 @@ const ChatBox = () => {
             {messages.map((message) => (
               <Message
                 key={message.id}
-                isUser={message.isUser}
+                role={message.isUser ? Role.User : Role.AI}
                 message={message.message}
                 isNew={message.isNew}
               />
