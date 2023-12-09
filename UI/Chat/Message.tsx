@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import RobotIcon from "./RobotIcon";
 import UserIcon from "./UserIcon";
 import { Role } from "@/lib/constants";
@@ -6,10 +7,12 @@ const Message = ({
   message,
   role,
   isNew = false,
+  isInitial = false,
 }: {
   message: string[];
   role: Role;
   isNew?: boolean;
+  isInitial?: boolean;
 }) => {
   const isUser = role === Role.User;
   return (
@@ -26,11 +29,27 @@ const Message = ({
           <hr className="border-black opacity-10 absolute w-full top-[2px] -z-10" />
         </div>
       </div>
-      <p className="text-base sm:text-lg font-medium tracking-wider text-shadow text-gray-300 pt-1">
+      <div className="text-base sm:text-lg font-medium tracking-wider text-shadow text-gray-300 pt-1">
         {message.map((text, i) => (
           <p key={i}>{text}</p>
         ))}
-      </p>
+        {isInitial && (
+          <ul className="list-disc list-inside mt-2">
+            {[
+              "Who is Aaron?",
+              "Where can I find some of his work?",
+              "What is his current availability?",
+            ].map((text) => (
+              <li
+                key={text}
+                className="rounded text-blue-300 hover:text-blue-600 cursor-pointer"
+              >
+                {text}
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
     </div>
   );
 };

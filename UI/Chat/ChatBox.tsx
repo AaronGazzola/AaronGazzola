@@ -19,7 +19,15 @@ type Message = {
 };
 
 const ChatBox = () => {
-  const [messages, setMessages] = useState<Message[]>([]);
+  const [messages, setMessages] = useState<Message[]>([
+    {
+      id: "init",
+      isUser: false,
+      message: [
+        "Hello, please select or type a question to learn about Aaron and his work.",
+      ],
+    },
+  ]);
   const [message, setMessage] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
   const scrollRef = useRef<HTMLDivElement | null>(null);
@@ -96,6 +104,7 @@ const ChatBox = () => {
                 role={message.isUser ? Role.User : Role.AI}
                 message={message.message}
                 isNew={message.isNew}
+                isInitial={message.id === "init"}
               />
             ))}
           </div>
