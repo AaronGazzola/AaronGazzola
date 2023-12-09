@@ -12,7 +12,7 @@ export enum Method {
 export enum Question {
   About = "about",
   Porfiolio = "portfolio",
-  Availability = "availability",
   Reviews = "reviews",
+  Availability = "availability",
   Contact = "contact",
 }
