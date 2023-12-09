@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import "styles/globals.css";
-import Footer from "../UI/Footer";
-import BackgroundImage from "../UI/BackgroundImage";
-import Header from "@/UI/Header";
+import Layout from "@/UI/Layout";
 
 export const metadata: Metadata = {
   title: "Gazzola Development",
@@ -20,11 +18,8 @@ export default function RootLayout({
         <link rel="icon" href="/icon.svg" type="image/svg+xml" />
         <link rel="alternate icon" href="/icon.ico" />
       </head>
-      <body className="text-gray-200 flex flex-col items-center justify-between h-screen font-sans">
-        <Header />
-        {children}
-        <Footer />
-        <BackgroundImage />
+      <body className="text-gray-200 flex flex-col items-center justify-between font-sans">
+        <Layout>{children}</Layout>
       </body>
     </html>
   );
