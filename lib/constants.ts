@@ -8,3 +8,9 @@ export enum Method {
   Post = "POST",
   Get = "GET",
 }
+
+export enum Question {
+  About = "about",
+  Porfiolio = "portfolio",
+  Availability = "availability",
+}

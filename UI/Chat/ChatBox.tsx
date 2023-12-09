@@ -5,7 +5,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { v4 as idGen } from "uuid";
 import { useLexicalComposerContext } from "@lexical/react/LexicalComposerContext";
 import { $getRoot, $isParagraphNode, LexicalNode } from "lexical";
-import { Method, Role } from "@/lib/constants";
+import { Method, Question, Role } from "@/lib/constants";
 
 // TODO:
 // Handle loading
@@ -33,39 +33,45 @@ const ChatBox = () => {
   const scrollRef = useRef<HTMLDivElement | null>(null);
   const [editor] = useLexicalComposerContext();
 
-  const onEmit = useCallback(async () => {
-    if (!message) return;
-    setLoading(true);
-    setMessages((prev) => [...prev, { id: idGen(), isUser: true, message }]);
-    setMessage([]);
-    editor.update(() => $getRoot().clear());
-    try {
-      const res = await fetch("/api/chat", {
-        method: Method.Post,
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          message: message,
-        }),
-      });
-      const data = await res.json();
+  const onEmit = useCallback(
+    async (messageVar?: string[]) => {
+      const msg = messageVar || message;
+      setLoading(true);
       setMessages((prev) => [
         ...prev,
-        {
-          id: idGen(),
-          isUser: false,
-          message: data.message.split(`\n`),
-          isNew: true,
-        },
+        { id: idGen(), isUser: true, message: msg },
       ]);
-    } catch (err: any) {
-      // TODO: handle error
-      console.error(err.response?.data.message);
-    } finally {
-      setLoading(false);
-    }
-  }, [editor, message]);
+      setMessage([]);
+      editor.update(() => $getRoot().clear());
+      try {
+        const res = await fetch("/api/chat", {
+          method: Method.Post,
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            message: msg,
+          }),
+        });
+        const data = await res.json();
+        setMessages((prev) => [
+          ...prev,
+          {
+            id: idGen(),
+            isUser: false,
+            message: data.message.split(`\n`),
+            isNew: true,
+          },
+        ]);
+      } catch (err: any) {
+        // TODO: handle error
+        console.error(err.response?.data.message);
+      } finally {
+        setLoading(false);
+      }
+    },
+    [editor, message]
+  );
 
   function updateScroll() {
     var element = scrollRef.current;
@@ -89,6 +95,19 @@ const ChatBox = () => {
     setMessage(paragraphTextArr);
   };
 
+  const onSelectQuestion = (question: Question) => {
+    const message: string[] = [];
+    if (question === Question.About)
+      message.push("Who is this Aaron guy and why should I hire him??");
+    if (question === Question.Porfiolio)
+      message.push(
+        "Did he make this site? What else has he made? Give me some links!"
+      );
+    if (question === Question.Availability)
+      message.push("Is he available for hire? How can I contact him?");
+    onEmit(message);
+  };
+
   useEffect(updateScroll, [messages]);
   return (
     <div className="absolute inset-0 flex flex-col items-center">
@@ -105,6 +124,7 @@ const ChatBox = () => {
                 message={message.message}
                 isNew={message.isNew}
                 isInitial={message.id === "init"}
+                onSelectQuestion={onSelectQuestion}
               />
             ))}
           </div>

@@ -1,18 +1,19 @@
-import { Fragment } from "react";
 import RobotIcon from "./RobotIcon";
 import UserIcon from "./UserIcon";
-import { Role } from "@/lib/constants";
+import { Question, Role } from "@/lib/constants";
 
 const Message = ({
   message,
   role,
   isNew = false,
   isInitial = false,
+  onSelectQuestion,
 }: {
   message: string[];
   role: Role;
   isNew?: boolean;
   isInitial?: boolean;
+  onSelectQuestion?: (question: string) => void;
 }) => {
   const isUser = role === Role.User;
   return (
@@ -35,16 +36,17 @@ const Message = ({
         ))}
         {isInitial && (
           <ul className="list-disc list-inside mt-2">
-            {[
-              "Who is Aaron?",
-              "Where can I find some of his work?",
-              "What is his current availability?",
-            ].map((text) => (
+            {Object.values(Question).map((question) => (
               <li
-                key={text}
+                key={question}
+                onClick={() => onSelectQuestion?.(question)}
                 className="rounded text-blue-300 hover:text-blue-600 cursor-pointer"
               >
-                {text}
+                {question === Question.About && "Who is Aaron?"}
+                {question === Question.Porfiolio &&
+                  "Where can I find some of his work?"}
+                {question === Question.Availability &&
+                  "What is his current availability?"}
               </li>
             ))}
           </ul>
