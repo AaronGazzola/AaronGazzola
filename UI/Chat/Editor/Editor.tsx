@@ -21,10 +21,10 @@ const Editor = ({
 }: {
   onChange: OnEditorChange;
   onEmit: () => void;
-  message: string[];
+  message: string;
 }) => {
   const { isFocused, contentEditableProps } = useEditor();
-  const messageIsEmpty = !message.length || message[0] === "";
+  const messageIsEmpty = message === "";
   return (
     <div className="pt-4 px-5 pb-5 relative">
       <div

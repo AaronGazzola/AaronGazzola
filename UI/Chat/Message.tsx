@@ -9,7 +9,7 @@ const Message = ({
   isInitial = false,
   onSelectQuestion,
 }: {
-  message: string[];
+  message: string;
   role: Role;
   isNew?: boolean;
   isInitial?: boolean;
@@ -31,7 +31,7 @@ const Message = ({
         </div>
       </div>
       <div className="text-base sm:text-lg font-medium tracking-wider text-shadow text-gray-300 pt-1 space-y-3">
-        {message.map((text, i) => (
+        {message.split("\n").map((text, i) => (
           <p key={i}>{text}</p>
         ))}
         {isInitial && (

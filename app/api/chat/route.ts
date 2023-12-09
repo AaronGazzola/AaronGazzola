@@ -4,7 +4,7 @@ import OpenAI from "openai";
 import { z } from "zod";
 
 const messageSchema = z.object({
-  message: z.array(z.string()),
+  message: z.string(),
 });
 
 export async function POST(req: NextRequest) {
@@ -18,7 +18,7 @@ export async function POST(req: NextRequest) {
     const completion = await chatgpt.chat.completions.create({
       messages: [
         { role: "system", content: customInstructions },
-        { role: "user", content: message.join(`\n`) },
+        { role: "user", content: message },
       ],
       model: "gpt-3.5-turbo",
     });

@@ -14,7 +14,7 @@ import { Method, Question, Role } from "@/lib/constants";
 
 type Message = {
   id: string;
-  message: string[];
+  message: string;
   isUser: boolean;
   isNew?: boolean;
 };
@@ -24,25 +24,24 @@ const ChatBox = () => {
     {
       id: "init",
       isUser: false,
-      message: [
+      message:
         "Hello, please select or type a question to learn about Aaron and his work.",
-      ],
     },
   ]);
-  const [message, setMessage] = useState<string[]>([]);
+  const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(true);
   const scrollRef = useRef<HTMLDivElement | null>(null);
   const [editor] = useLexicalComposerContext();
 
   const onEmit = useCallback(
-    async (messageVar?: string[]) => {
-      const msg = messageVar || message;
+    async (messageArg = "") => {
+      const messageVar = messageArg || message;
       setLoading(true);
       setMessages((prev) => [
         ...prev,
-        { id: idGen(), isUser: true, message: msg },
+        { id: idGen(), isUser: true, message: messageVar },
       ]);
-      setMessage([]);
+      setMessage("");
       editor.update(() => $getRoot().clear());
       try {
         const res = await fetch("/api/chat", {
@@ -51,7 +50,7 @@ const ChatBox = () => {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            message: msg,
+            message: messageVar,
           }),
         });
         const data = await res.json();
@@ -60,7 +59,7 @@ const ChatBox = () => {
           {
             id: idGen(),
             isUser: false,
-            message: data.message.split(`\n`),
+            message: data.message,
             isNew: true,
           },
         ]);
@@ -82,33 +81,33 @@ const ChatBox = () => {
   }
 
   const onEditorChange: OnEditorChange = (editorState) => {
-    let paragraphTextArr: string[] = [];
+    let messageText = "";
     editorState.read(() => {
       const root = $getRoot();
-      paragraphTextArr = root
+      messageText = root
         .getChildren()
         .reduce((arr: string[], child: LexicalNode) => {
-          if ($isParagraphNode(child))
-            arr.push(...child.getTextContent().split("\n"));
+          if ($isParagraphNode(child)) arr.push(child.getTextContent());
           return arr;
-        }, []);
+        }, [])
+        .join("\n");
     });
-    setMessage(paragraphTextArr);
+    setMessage(messageText);
   };
 
   const onSelectQuestion = (question: Question) => {
-    const message: string[] = [];
-    if (question === Question.About)
-      message.push("Who is this Aaron guy and why should I hire him??");
-    if (question === Question.Porfiolio)
-      message.push(
-        "Did he make this site? What else has he made? Give me some links!"
-      );
-    if (question === Question.Availability)
-      message.push("When is he available to hire?");
-    if (question === Question.Reviews) message.push("Show me some reviews!");
-    if (question === Question.Contact) message.push("How can I contact him?");
-    onEmit(message);
+    switch (question) {
+      case Question.About:
+        return onEmit("Who is Aaron?");
+      case Question.Porfiolio:
+        return onEmit("Show me some of his work.");
+      case Question.Availability:
+        return onEmit("When is he available to hire?");
+      case Question.Reviews:
+        return onEmit("Show me some reviews!");
+      case Question.Contact:
+        return onEmit("How can I contact him?");
+    }
   };
 
   useEffect(updateScroll, [messages]);
