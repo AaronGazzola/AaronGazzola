@@ -1,14 +1,8 @@
 # Gazzola.dev client contact form
 
-Gazzola.dev is a client contact form for full-stack TypeScript development with Next.js by Aaron Gazzola. This app features:
+Gazzola.dev is a chat bot portfolio page for Full-Stack TypeScript development by Aaron Gazzola. It was built with Next.js 14, TailwindCss and the openAI chat-gpt API.
 
-- Rich text editing with Lexical.
-- Email sending with AWS SES
-- Styling with tailwind
-- AI integration with OpenAI APIs
-- AutoSave with Prisma and Postgres
-
-Feel free explore, I welcome any feedback. Thanks for visiting!
+Feel free explore, any feedback is welcome. Thanks for visiting!
 
 Aaron.
 
