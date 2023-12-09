@@ -13,4 +13,5 @@ export enum Question {
   About = "about",
   Porfiolio = "portfolio",
   Availability = "availability",
+  Reviews = "reviews",
 }

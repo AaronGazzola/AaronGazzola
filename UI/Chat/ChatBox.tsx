@@ -10,6 +10,7 @@ import { Method, Question, Role } from "@/lib/constants";
 // TODO:
 // Handle loading
 // Handle read stream
+// Handle links
 
 type Message = {
   id: string;
@@ -105,6 +106,7 @@ const ChatBox = () => {
       );
     if (question === Question.Availability)
       message.push("Is he available for hire? How can I contact him?");
+    if (question === Question.Reviews) message.push("Show me some reviews!");
     onEmit(message);
   };
 

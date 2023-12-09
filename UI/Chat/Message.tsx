@@ -13,7 +13,7 @@ const Message = ({
   role: Role;
   isNew?: boolean;
   isInitial?: boolean;
-  onSelectQuestion?: (question: string) => void;
+  onSelectQuestion?: (question: Question) => void;
 }) => {
   const isUser = role === Role.User;
   return (
@@ -30,7 +30,7 @@ const Message = ({
           <hr className="border-black opacity-10 absolute w-full top-[2px] -z-10" />
         </div>
       </div>
-      <div className="text-base sm:text-lg font-medium tracking-wider text-shadow text-gray-300 pt-1">
+      <div className="text-base sm:text-lg font-medium tracking-wider text-shadow text-gray-300 pt-1 space-y-3">
         {message.map((text, i) => (
           <p key={i}>{text}</p>
         ))}
@@ -47,6 +47,8 @@ const Message = ({
                   "Where can I find some of his work?"}
                 {question === Question.Availability &&
                   "What is his current availability?"}
+                {question === Question.Reviews &&
+                  "What do other people say about his work?"}
               </li>
             ))}
           </ul>
