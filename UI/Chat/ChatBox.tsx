@@ -11,7 +11,6 @@ import { Method, Question, Role } from "@/lib/constants";
 // Handle loading
 // Handle read stream
 // Handle links
-// Add send button
 
 type Message = {
   id: string;
@@ -38,6 +37,7 @@ const ChatBox = () => {
   const onEmit = useCallback(
     async (messageVar?: string[]) => {
       const msg = messageVar || message;
+      console.log(msg);
       setLoading(true);
       setMessages((prev) => [
         ...prev,
@@ -132,7 +132,7 @@ const ChatBox = () => {
               />
             ))}
           </div>
-          <Editor onChange={onEditorChange} onEmit={onEmit} />
+          <Editor onChange={onEditorChange} onEmit={onEmit} message={message} />
         </div>
       </div>
     </div>
