@@ -11,6 +11,7 @@ import { Method, Question, Role } from "@/lib/constants";
 // Handle loading
 // Handle read stream
 // Handle links
+// Add send button
 
 type Message = {
   id: string;
@@ -105,8 +106,9 @@ const ChatBox = () => {
         "Did he make this site? What else has he made? Give me some links!"
       );
     if (question === Question.Availability)
-      message.push("Is he available for hire? How can I contact him?");
+      message.push("When is he available to hire?");
     if (question === Question.Reviews) message.push("Show me some reviews!");
+    if (question === Question.Contact) message.push("How can I contact him?");
     onEmit(message);
   };
 

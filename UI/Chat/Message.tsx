@@ -48,7 +48,8 @@ const Message = ({
                 {question === Question.Availability &&
                   "What is his current availability?"}
                 {question === Question.Reviews &&
-                  "What do other people say about his work?"}
+                  "What do people say about his work?"}
+                {question === Question.Contact && "How can I contact him?"}
               </li>
             ))}
           </ul>
