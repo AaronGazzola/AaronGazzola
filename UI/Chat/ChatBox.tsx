@@ -8,7 +8,6 @@ import { $getRoot, $isParagraphNode, LexicalNode } from "lexical";
 import { Method, Question, Role } from "@/lib/constants";
 
 // TODO:
-// Handle loading
 // Handle read stream
 
 type Message = {
@@ -28,14 +27,14 @@ const ChatBox = () => {
     },
   ]);
   const [message, setMessage] = useState("");
-  const [loading, setLoading] = useState(true);
+  const [isLoading, seIstLoading] = useState(false);
   const scrollRef = useRef<HTMLDivElement | null>(null);
   const [editor] = useLexicalComposerContext();
 
   const onEmit = useCallback(
     async (messageArg = "") => {
       const messageVar = messageArg || message;
-      setLoading(true);
+      seIstLoading(true);
       setMessages((prev) => [
         ...prev,
         { id: idGen(), isUser: true, message: messageVar },
@@ -66,7 +65,7 @@ const ChatBox = () => {
         // TODO: handle error
         console.error(err.response?.data.message);
       } finally {
-        setLoading(false);
+        seIstLoading(false);
       }
     },
     [editor, message]
@@ -100,7 +99,7 @@ const ChatBox = () => {
         return onEmit("Who is this Aaron guy and why should I hire him??");
       case Question.Porfiolio:
         return onEmit(
-          "Did he make this site? What else has he made? Give me some links!"
+          "Did he make Gazzola.dev? What else has he made? Give me some links!"
         );
       case Question.Availability:
         return onEmit("When is he available to hire?");
@@ -130,6 +129,7 @@ const ChatBox = () => {
                 onSelectQuestion={onSelectQuestion}
               />
             ))}
+            <Message isLoading={isLoading} />
           </div>
           <Editor onChange={onEditorChange} onEmit={onEmit} message={message} />
         </div>

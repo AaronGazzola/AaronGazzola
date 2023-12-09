@@ -3,24 +3,26 @@ import RobotIcon from "./RobotIcon";
 import UserIcon from "./UserIcon";
 import { Question, Role } from "@/lib/constants";
 import urlRegexSafe from "url-regex-safe";
+import { Fragment } from "react";
 
 const Message = ({
-  message,
-  role,
+  message = "",
+  role = Role.AI,
   isNew = false,
   isInitial = false,
   onSelectQuestion,
+  isLoading = false,
 }: {
-  message: string;
-  role: Role;
+  message?: string;
+  role?: Role;
   isNew?: boolean;
   isInitial?: boolean;
   onSelectQuestion?: (question: Question) => void;
+  isLoading?: boolean;
 }) => {
   const isUser = role === Role.User;
   const urlRegex = urlRegexSafe();
-  const renderText = (text: string) => {};
-  console.log(renderText(message));
+  if (!message && !isLoading) return null;
   return (
     <div className="w-full pb-10 pl-7 sm:pl-10">
       <div className="w-full">
@@ -31,8 +33,30 @@ const Message = ({
           </h2>
         </div>
         <div className="relative">
-          <hr className="border-gray-400 mt-0.5 mb-1" />
-          <hr className="border-black opacity-10 absolute w-full top-[2px] -z-10" />
+          {isLoading ? (
+            <svg
+              className="stroke-gray-500"
+              width="100%"
+              height="1"
+              viewBox="0 0 100 2"
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="none"
+            >
+              <line
+                x1="0"
+                y1="1"
+                x2="100"
+                y2="1"
+                strokeWidth="2"
+                className="animatedLine"
+              />
+            </svg>
+          ) : (
+            <>
+              <hr className="border-gray-400 mt-0.5 mb-1" />
+              <hr className="border-black opacity-10 absolute w-full top-[2px] -z-10" />{" "}
+            </>
+          )}
         </div>
       </div>
       <div className="text-base sm:text-lg font-medium tracking-wider text-shadow text-gray-300 pt-1 space-y-3">
@@ -41,7 +65,7 @@ const Message = ({
           return (
             <p key={i}>
               {text.split(urlRegex).map((part, i) => (
-                <>
+                <Fragment key={i}>
                   {part}
                   {urlRegex.test(links[i]) && (
                     <Link
@@ -53,7 +77,7 @@ const Message = ({
                       {links[i]}
                     </Link>
                   )}
-                </>
+                </Fragment>
               ))}
             </p>
           );

@@ -43,6 +43,25 @@
   }
 }
 
+@keyframes dashAnimation {
+  0% {
+    stroke-dasharray: 0, 100;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 150, 0;
+    stroke-dashoffset: -100;
+  }
+  100% {
+    stroke-dasharray: 0, 100;
+    stroke-dashoffset: -200;
+  }
+}
+
+.animatedLine {
+  animation: dashAnimation 2s linear infinite;
+}
+
 .bg-image {
   animation: zoom 1.5s ease-out forwards;
 }
