@@ -1,6 +1,8 @@
+import Link from "next/link";
 import RobotIcon from "./RobotIcon";
 import UserIcon from "./UserIcon";
 import { Question, Role } from "@/lib/constants";
+import urlRegexSafe from "url-regex-safe";
 
 const Message = ({
   message,
@@ -16,6 +18,9 @@ const Message = ({
   onSelectQuestion?: (question: Question) => void;
 }) => {
   const isUser = role === Role.User;
+  const urlRegex = urlRegexSafe();
+  const renderText = (text: string) => {};
+  console.log(renderText(message));
   return (
     <div className="w-full pb-10 pl-7 sm:pl-10">
       <div className="w-full">
@@ -31,9 +36,28 @@ const Message = ({
         </div>
       </div>
       <div className="text-base sm:text-lg font-medium tracking-wider text-shadow text-gray-300 pt-1 space-y-3">
-        {message.split("\n").map((text, i) => (
-          <p key={i}>{text}</p>
-        ))}
+        {message.split("\n").map((text, i) => {
+          const links = text.match(urlRegex) ?? [];
+          return (
+            <p key={i}>
+              {text.split(urlRegex).map((part, i) => (
+                <>
+                  {part}
+                  {urlRegex.test(links[i]) && (
+                    <Link
+                      className="text-blue-300 hover:text-blue-600 cursor-pointer"
+                      href={links[i]}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {links[i]}
+                    </Link>
+                  )}
+                </>
+              ))}
+            </p>
+          );
+        })}
         {isInitial && (
           <ul className="list-disc list-inside mt-2">
             {Object.values(Question).map((question) => (

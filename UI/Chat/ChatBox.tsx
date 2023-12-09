@@ -10,7 +10,6 @@ import { Method, Question, Role } from "@/lib/constants";
 // TODO:
 // Handle loading
 // Handle read stream
-// Handle links
 
 type Message = {
   id: string;
@@ -98,9 +97,11 @@ const ChatBox = () => {
   const onSelectQuestion = (question: Question) => {
     switch (question) {
       case Question.About:
-        return onEmit("Who is Aaron?");
+        return onEmit("Who is this Aaron guy and why should I hire him??");
       case Question.Porfiolio:
-        return onEmit("Show me some of his work.");
+        return onEmit(
+          "Did he make this site? What else has he made? Give me some links!"
+        );
       case Question.Availability:
         return onEmit("When is he available to hire?");
       case Question.Reviews:
