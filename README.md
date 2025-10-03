@@ -1,4 +1,4 @@
-## Daily live vibe coding | Midday AEST | Typescript & Nextjs & Prisma & Supabase
+## Live vibe coding every day on Youtube at Midday AEST | Typescript & Nextjs & Prisma & Supabase
 [@AzAnything](https://www.youtube.com/@AzAnything)
 [Gazzola.dev](https://gazzola.dev)
 
