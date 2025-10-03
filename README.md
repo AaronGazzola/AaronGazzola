@@ -1,4 +1,4 @@
-## Live vibe coding everyday on Youtube at Midday AEST | Typescript & Nextjs & Supabase
+## Live vibe coding everyday on Youtube at midday AEST | Typescript & Nextjs & Supabase
 [@AzAnything](https://www.youtube.com/@AzAnything)
 [Gazzola.dev](https://gazzola.dev)
 
