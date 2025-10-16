@@ -1,4 +1,4 @@
-## Live vibe coding most days on Youtube at midday AEDST | Typescript & Nextjs & Supabase
+## Live vibe coding every other day on Youtube at midday AEDST | Typescript & Nextjs & Supabase
 YouTube live streaming channel: [@AzAnything](https://www.youtube.com/@AzAnything)
 
 Primary portfolio project: [Gazzola.dev](https://gazzola.dev)
