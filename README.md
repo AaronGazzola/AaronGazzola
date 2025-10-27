@@ -1,6 +1,6 @@
 ## Live vibe coding on Youtube at midday AEDST | Typescript & Nextjs & Supabase
 
-### Free Code Review: [gazzola.dev/?codeReview=yesPlease](gazzola.dev/?codeReview=yesPlease)
+### Free Code Review: [Gazzola.dev](https://gazzola.dev/?codeReview=yesPlease)
 
 YouTube live streaming channel: [@AzAnything](https://www.youtube.com/@AzAnything)
 
