@@ -1,4 +1,4 @@
-## Live vibe coding on Youtube at midday AEDST | Typescript & Nextjs & Supabase
+## Live vibe coding daily at 7pm EST (9AM AEDT) | Typescript & Nextjs & Supabase
 
 ### Free Code Review: [Gazzola.dev](https://gazzola.dev/start-here/tech-stack?codeReview=yesPlease)
 
