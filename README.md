@@ -1,4 +1,4 @@
-# AI Quality Assurance
+# AI Quality Assurance: Test, Fix, Ship | Typescript Nextjs Vite Lovable
 
 ### 5 years of 5 star freelance
 ### Apply for a free code review: [Gazzola.dev](https://gazzola.dev/start-here/tech-stack?codeReview=yesPlease)
