@@ -1,4 +1,4 @@
-#  AI QA: Web App Quality Assurance: Build, test, fix, improve & deploy
+#  AI QA: Web App Quality Assurance: Test, fix, improve & deploy 🚀
 
 ### Next.js Web App builder & Lovable-to-Production Services: [Gazzola.dev](https://gazzola.dev/)
 ### [🔴 Live] on YouTube at 7pm EDT every other day: [@AzAnything](https://www.youtube.com/@AzAnything)
