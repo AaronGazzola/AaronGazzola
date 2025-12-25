@@ -1,3 +1,3 @@
-#  [⭐ Click here ➡️](https://gazzola.dev/readme?codeReview=yesPlease) For AI-Generated Web App Quality Assurance 🚀
+# [AI-Generated Web App Quality Assurance](https://gazzola.dev/readme?codeReview=yesPlease) 🚀
 
-## ***Please do not contact me on Upwork***
+## If you have not already done so: ***Please do not contact me on Upwork***
