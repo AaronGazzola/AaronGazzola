@@ -1,6 +1,6 @@
-# Generate your Next.js + Supabase starter kit: [Gazzola.dev](https://gazzola.dev)
+# Generate your Pro Vibe Code starter kit: [Gazzola.dev](https://gazzola.dev)
 
-# Watch Web dev AI QA Live on YouTube: [@AzAnything](https://www.youtube.com/@AzAnything) 
+# Watch Expert Web Dev AI QA Live on YouTube: [@AzAnything](https://www.youtube.com/@AzAnything) 
 
 Code Analysis and Refactoring, 
 Security Auditing and Remediation,
