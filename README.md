@@ -1,3 +1,12 @@
-## ➡️ [Click Here](https://gazzola.dev/readme?codeReview=yesPlease) ⬅️ for AI-Generated Web App Quality Assurance
+# Generate your Next.js + Supabase starter kit: [Gazzola.dev](https://gazzola.dev)
 
-### Live on Youtube: [@AzAnything](https://www.youtube.com/@AzAnything)
+# Watch Web dev AI QA Live on YouTube: [@AzAnything](https://www.youtube.com/@AzAnything) 
+
+Code Analysis and Refactoring, 
+Security Auditing and Remediation,
+End-to-End Automated Testing, 
+Complex Feature Implementation.
+Lift the veil on the inner workings of your AI-generated web app with in-depth analysis and detailed progress reports.
+Launch your web app with confidence, backed by expert refactoring and rigorous testing.
+Next.js, Vite, Supabase, PostgreSQL, Tailwind, Shadcn 
++ Fixed Pricing +
