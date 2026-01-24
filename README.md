@@ -1,8 +1,4 @@
-# Generate Your Web App Starter Kit: [Gazzola.dev](https://gazzola.dev)
-
-# Live on Youtube: [@AzAnything](https://www.youtube.com/@AzAnything) 
-
-## AI QA: Quality Assurance for AI-Generated Web Apps: 
+# AI QA: Quality Assurance for AI-Generated Web Apps: 
 
 - Code Analysis and Refactoring, 
 - Security Auditing and Remediation,
@@ -14,3 +10,7 @@
 Next.js, Vite, Supabase, PostgreSQL, Tailwind, Shadcn 
 
 + Fixed Pricing +
+
+## Generate Your Web App Starter Kit: [Gazzola.dev](https://gazzola.dev)
+
+## Live on Youtube: [@AzAnything](https://www.youtube.com/@AzAnything) 
