@@ -1,4 +1,4 @@
-# AI QA: Quality Assurance for AI-Generated Web Apps: 
+# AI QA: Quality Assurance for AI-Generated Web Apps
 
 - Code Analysis and Refactoring, 
 - Security Auditing and Remediation,
