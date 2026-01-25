@@ -1,16 +1,16 @@
-# AI QA: Quality Assurance for AI-Generated Web Apps
+# AI QA Specialist: Testing & Enhancing AI-Generated Web Applications
 
-- Code Analysis and Refactoring, 
-- Security Auditing and Remediation,
-- End-to-End Automated Testing, 
-- Complex Feature Implementation.
-- Lift the veil on the inner workings of your AI-generated web app with in-depth analysis and detailed progress reports.
-- Launch your web app with confidence, backed by expert refactoring and rigorous testing.
+- Code analysis & refactoring
+- Security auditing & remediation  
+- End-to-end automated testing
+- Complex feature implementation
 
-Next.js, Vite, Supabase, PostgreSQL, Tailwind, Shadcn 
+Tech Stack: Supabase, Next.js, Vite, Lovable, Replit, PostgreSQL, Tailwind
 
-+ Fixed Pricing +
+Fixed-price contracts only.
 
 ## Generate Your Web App Starter Kit: [Gazzola.dev](https://gazzola.dev)
+
+## Request a free code review: [Gazzola.dev]([https://gazzola.dev](https://gazzola.dev/readme?codeReview=yesPlease))
 
 ## Live on Youtube: [@AzAnything](https://www.youtube.com/@AzAnything) 
