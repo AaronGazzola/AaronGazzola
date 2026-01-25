@@ -13,4 +13,4 @@ Fixed-price contracts only.
 
 ## Request a free code review: [Gazzola.dev/?codeReview=yesPlease](https://gazzola.dev/readme?codeReview=yesPlease)
 
-## Live on Youtube: [@AzAnything](https://www.youtube.com/@AzAnything) 
+## 🔴 Live on Youtube: [@AzAnything](https://www.youtube.com/@AzAnything) 
