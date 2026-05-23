@@ -1,4 +1,4 @@
-#  Vibe Code Coach: Chat, Review, Test & Deploy Supabase Next.js Web Apps 
+#  Vibe Code Coach: Next.js & Supabase Web Apps 
 
 ## Get started at [AzAnything.dev](https://AzAnything.dev)
 
