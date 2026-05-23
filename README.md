@@ -1,16 +1,5 @@
-# AI QA Specialist: Testing & Enhancing AI-Generated Web Applications
+#  Vibe Code Coach: Chat, Review, Test & Deploy Supabase Next.js Web Apps 
 
-- Code analysis & refactoring
-- Security auditing & remediation  
-- End-to-end automated testing
-- Complex feature implementation
-
-Tech Stack: Supabase, Next.js, Vite, Lovable, Replit, PostgreSQL, Tailwind
-
-Fixed-price contracts only.
-
-## Generate Your Web App Starter Kit: [AzAnything.dev](https://AzAnything.dev)
-
-## Request a free code review: [AzAnything.dev/?codeReview=yesPlease](https://azanything.dev/readme?codeReview=yesPlease)
+## Get started at [AzAnything.dev](https://AzAnything.dev)
 
 ## 🔴 Live on Youtube: [@AzAnything](https://www.youtube.com/@AzAnything) 
