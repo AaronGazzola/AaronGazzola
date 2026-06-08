@@ -1,7 +1,7 @@
 
 ##  Vibe Code Coaching for Vite/Next.js & Supabase Web Apps 
 
-### 7 Years of Freelance Full Stack Experience
+### 7 Years of Full Stack Experience
 
 ### My Main Projects:
 - [AzAnything.dev](https://AzAnything.dev) = Vibe Code Coaching ([repository](https://github.com/AaronGazzola/AzAnything.dev))
