@@ -3,6 +3,7 @@
 
 ### 7 Years of Freelance Full Stack Experience
 
+### My Main Projects:
 - [AzAnything.dev](https://AzAnything.dev) = Vibe Code Coaching ([repository](https://github.com/AaronGazzola/AzAnything.dev))
 - [Vids.Tube](https://Vids.Tube) = Independent YouTube Alternative ([repository](https://github.com/AaronGazzola/Vids.Tube))
 - [Eco3D.Shop](https://Eco3D.Shop) = Play & Print 3D Pets ([repository](https://github.com/AaronGazzola/eco3d.shop))
