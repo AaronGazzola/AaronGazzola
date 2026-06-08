@@ -1,5 +1,5 @@
 
-##  Vibe Code Coaching and Quality Assurance for Vite/Next.js & Supabase Web Apps 
+##  Vibe Code Coaching for Vite/Next.js & Supabase Web Apps 
 
 ### 7 Years of Freelance Full Stack Experience
 
