@@ -3,8 +3,8 @@
 
 ### 7 Years of Freelance Full Stack Experience
 
-- [AzAnything.dev](https://AzAnything.dev) = Az Gazzola: Vibe code coach ([repository](https://github.com/AaronGazzola/AzAnything.dev))
-- [Vids.Tube](https://Vids.Tube) = My YouTube without ads or algorithm ([repository](https://github.com/AaronGazzola/Vids.Tube))
+- [AzAnything.dev](https://AzAnything.dev) = Vibe Code Coaching ([repository](https://github.com/AaronGazzola/AzAnything.dev))
+- [Vids.Tube](https://Vids.Tube) = Independent YouTube Alternative ([repository](https://github.com/AaronGazzola/Vids.Tube))
 - [Eco3D.Shop](https://Eco3D.Shop) = Play & Print 3D Pets ([repository](https://github.com/AaronGazzola/eco3d.shop))
 
 ## 🔴 Live on Youtube: [@AzAnything](https://www.youtube.com/@AzAnything) 
