@@ -1,12 +1,11 @@
-
-##  Vibe Code Coaching for Vite/Next.js & Supabase Web Apps 
+## Web App Consultant
 
 ### 7 Years of Full Stack Experience
 
 ### My Main Projects:
-- [AzAnything.dev](https://AzAnything.dev) = Vibe Code Coaching ([repository](https://github.com/AaronGazzola/AzAnything.dev))
-- [Vids.Tube](https://Vids.Tube) = Independent YouTube Alternative ([repository](https://github.com/AaronGazzola/Vids.Tube))
-- [Eco3D.Shop](https://Eco3D.Shop) = Play & Print 3D Pets ([repository](https://github.com/AaronGazzola/eco3d.shop))
+- [AzAnything.dev](https://AzAnything.dev) = Web app consultations
+- [Vids.Tube](https://Vids.Tube) = Live stream platform
+- [Eco3D.Shop](https://Eco3D.Shop) = Play & Print 3D games
 
 ## 🔴 Live on Youtube: [@AzAnything](https://www.youtube.com/@AzAnything) 
 
