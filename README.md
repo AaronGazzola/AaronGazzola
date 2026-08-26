@@ -2,7 +2,7 @@
 
 ### 7 Years of Full Stack Experience
 
-### My Main Projects:
+### Main Projects:
 - [AzAnything.dev](https://AzAnything.dev) = Web app consultations
 - [Vids.Tube](https://Vids.Tube) = Live stream platform
 - [Eco3D.Shop](https://Eco3D.Shop) = Play & Print 3D games
