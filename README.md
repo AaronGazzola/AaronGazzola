@@ -1,6 +1,6 @@
 ## Web App Consultant: Claude Code Specialist 
 
-🏆 7 Years of Freelance Full Stack Experience
+🏆 7 Years of Full Stack Experience
 
 🧑‍💻 Complex design & development
 
