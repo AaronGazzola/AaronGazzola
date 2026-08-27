@@ -1,9 +1,13 @@
 ## Web App Consultant: Claude Code Specialist 
 
 🏆 7 Years of Freelance Full Stack Experience
+
 🧑‍💻 Complex design & development
+
 🛡️ Database architecture & security
+
 🪲 Automated testing & bug fixing
+
 📞 Clear & responsive communication
 
 - [AzAnything.dev](https://AzAnything.dev) = Consultation chat app
