@@ -12,8 +12,11 @@
 
 ### My web apps:
 
-- [Gazzola.dev](https://Gazzola.dev) = Consultation chat app
-- [Vids.Tube](https://Vids.Tube) = Live stream platform
-- [Eco3D.Shop](https://Eco3D.Shop) = Play & Print 3D games
+- [Gazzola.dev](https://Gazzola.dev)
+  - Consultation chat app
+- [Vids.Tube](https://Vids.Tube)
+  - Live stream platform
+- [Eco3D.Shop](https://Eco3D.Shop)
+  - Play & Print 3D games
 
 Join the [Anything Web Dev](https://discord.gg/BCJDKePEAk) Discord!
