@@ -19,4 +19,4 @@
 - [Eco3D.Shop](https://Eco3D.Shop)
   - Play & Print 3D games
 
-Join my [Discord!](https://discord.gg/BCJDKePEAk)
+*Join my [Discord!](https://discord.gg/BCJDKePEAk)*
