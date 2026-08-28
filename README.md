@@ -13,10 +13,10 @@
 ### My web apps:
 
 - [Gazzola.dev](https://Gazzola.dev)
-  - Consultation chat app
+  - Web app consultation
 - [Vids.Tube](https://Vids.Tube)
-  - Live stream platform
+  - Community focused live-streaming platform
 - [Eco3D.Shop](https://Eco3D.Shop)
-  - Play & Print 3D games
+  - Play 3D games & print 3D prizes
 
 *Join my [Discord!](https://discord.gg/BCJDKePEAk)*
