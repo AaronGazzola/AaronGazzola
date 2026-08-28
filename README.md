@@ -13,9 +13,9 @@
 ### My web apps:
 
 - [Gazzola.dev](https://Gazzola.dev)
-  - Web app consultation
+  - Web app consultation services
 - [Vids.Tube](https://Vids.Tube)
-  - Community focused live-streaming platform
+  - Community driven live-streaming platform
 - [Eco3D.Shop](https://Eco3D.Shop)
   - Play 3D games & print 3D prizes
 
