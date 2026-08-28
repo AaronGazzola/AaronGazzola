@@ -13,7 +13,7 @@
 ### My web apps:
 
 - [Gazzola.dev](https://Gazzola.dev)
-  - Web app consultation services
+  - Web development consultation chat app
 - [Vids.Tube](https://Vids.Tube)
   - Community driven live-streaming platform
 - [Eco3D.Shop](https://Eco3D.Shop)
