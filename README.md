@@ -2,13 +2,13 @@
 
 7 Years of experience, including 2 years at a Y Combinator startup, and 6 months at a Blackbird VC startup
 
-🧑‍💻 Complex design & development
+🧑‍💻 Detailed roadmap design for complex development planning
 
-🛡️ Database architecture & security
+🛡️ Database architecture, RLS security and data management
 
-🪲 Automated testing & bug fixing
+🪲 Error prevention, automated testing and bug fixing
 
-📞 Clear & responsive communication
+📞 Clear, responsive communication with Human crafted reporting  
 
 ### My web apps:
 
