@@ -8,9 +8,9 @@
 
 🪲 Error prevention, automated testing and bug fixing
 
-✍️ Clear, responsive communication with human crafted reporting
-
 ✅ Privacy policy and terms of service drafting and review
+
+✍️ Clear, responsive communication with human crafted reporting
 
 ### My web apps:
 
