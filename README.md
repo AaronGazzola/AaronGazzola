@@ -1,6 +1,6 @@
 ## Web App Consultant: Claude Code Specialist 
 
-7 Years of experience, including 2 years at a Y Combinator startup, and 6 months at a Blackbird VC startup
+8 Years of experience, including 2 years at a Y Combinator startup, and 6 months at a Blackbird VC startup
 
 🛣️ Detailed roadmap design for complex development planning
 
