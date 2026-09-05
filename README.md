@@ -2,7 +2,7 @@
 
 8 years of experience, including 2 years at a Y Combinator startup and 6 months at a Blackbird VC startup
 
-📞 Ongoing guidance and support: available for video calls daily 4pm–7pm Eastern Time
+📞 Available for video calls daily between 4pm–7pm Eastern Time
 
 💾 Database architecture, RLS security and data management
 
