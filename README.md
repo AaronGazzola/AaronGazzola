@@ -14,8 +14,6 @@
 
 ✍️ Clear and responsive communication with human crafted reporting  
 
-Tech stack: Supabase, PostgreSQL, Next.js, Vite, Tailwind, Shadcn, Trigger.dev, Vercel, Claude Code
-
 ### My web apps:
 
 - [Gazzola.dev](https://Gazzola.dev)
