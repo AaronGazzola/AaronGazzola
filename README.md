@@ -14,12 +14,13 @@
 
 ✍️ Clear and responsive communication with human crafted reporting  
 
-### My web apps:
-
+### Level-Up Your Web App
 - [Gazzola.dev](https://Gazzola.dev)
   - Web development consultation chat app
+### Join the Live Stream Community
 - [Vids.Tube](https://Vids.Tube)
   - Community driven live-streaming platform
+### Play & Print 3D Pets
 - [Eco3D.Shop](https://Eco3D.Shop)
   - Play 3D games & print 3D prizes
 
