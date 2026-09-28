@@ -1,6 +1,6 @@
 ## Technical Advisor: Next.js, Vite, Supabase & Claude Code Web Apps
 
-8 years of experience, including 2 years at a Y Combinator startup and 6 months at a Blackbird VC startup
+8 years of experience, including 2 years at a Y Combinator startup and 7 months at a Blackbird VC startup
 
 📺 Live on [Vids.Tube](https://Vids.Tube) daily at 7pm Eastern time 
 
