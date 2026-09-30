@@ -4,7 +4,7 @@
 
 📺 Live on [Vids.Tube](https://Vids.Tube) daily at 7pm Eastern time 
 
-📞 Available for video calls daily between 3pm–7pm Eastern time
+📞 Available for video calls daily between 4pm–7pm Eastern time
 
 💾 Database architecture, RLS security and data management
 
