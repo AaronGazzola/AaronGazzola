@@ -1,6 +1,6 @@
 ## From vibe to viable with a senior on your side | Claude Code web dev 
 
-I'm Az Gazzola, a senior web developer with 8 years of experience.
+I'm Az Gazzola, a senior web developer with **8 years of experience**.
 Your app is never finished, but the next step can always be clear.
 Connect your repository and services for personalized diagnosis, triage and planning.
 Bring in an expert for the hard parts, and handle the rest yourself with guidance and support.
