@@ -1,20 +1,15 @@
-## Technical Advisor: Next.js, Vite, Supabase & Claude Code Web Apps
+## From vibe to viable with a senior on your side | Claude Code web dev 
 
-8 years of experience. 2 years at a Y Combinator startup and 7 months at a Blackbird VC startup
+I'm Az Gazzola, a senior web developer with 8 years of experience.
+Your app is never finished, but the next step can always be clear.
+Connect your repository and services for personalized diagnosis, triage and planning.
+Bring in an expert for the hard parts, and handle the rest yourself with guidance and support.
 
-📺 Live on [Vids.Tube](https://Vids.Tube) daily at 7pm Eastern time 
+🚀 2 years experience at a Y Combinator startup and 7 months at a Blackbird VC startup
+📺 Live on my own live-streaming platform daily at 7pm Eastern time
+📞 Available for video calls daily between 4pm–7pm Eastern Time
 
-📞 Available for video calls daily between 4pm–7pm Eastern time
-
-💾 Database architecture, RLS security and data management
-
-🛣️ Detailed roadmap design for complex development planning
-
-🪲 Error prevention, automated testing and root cause analysis
-
-✅ Privacy policy, terms of service and GDPR readiness
-
-✍️ Clear and responsive communication with human crafted reporting  
+Tech stack: Supabase, PostgreSQL, Next.js, Vite, Tailwind, Shadcn, Trigger.dev, Vercel, Claude Code
 
 ### Level Up Your Web App: [Gazzola.dev](https://Gazzola.dev)
 ### Join the Live Stream Community: [Vids.Tube](https://Vids.Tube)
