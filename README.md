@@ -2,6 +2,7 @@
 
 Your app is never finished, but the next step can always be clear.
 Senior web developer: 8 years building and reviewing production Next.js, Supabase and Postgres apps.
+
 Connect your repository and services at [Gazzola.dev](https://Gazzola.dev) for personalized diagnosis, triage and planning.
 Bring in an expert for the hard parts, and handle the rest yourself with guidance and support.
 
