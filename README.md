@@ -7,7 +7,7 @@ Bring in an expert for the hard parts, and handle the rest yourself with guidanc
 
 📺 Live daily at 7pm Eastern time on my own live streaming platform: [Vids.Tube](https://Vids.Tube)
 
-📞 Available for video calls on [my Discord](https://discord.gg/BCJDKePEAk) daily between 4pm–7pm Eastern Time
+📞 Available for video calls daily between 4pm–7pm Eastern Time via [my Discord](https://discord.gg/BCJDKePEAk)
 
 💾 Database architecture, RLS security and multi-tenant access control
 
