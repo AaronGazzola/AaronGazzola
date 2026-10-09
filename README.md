@@ -5,7 +5,7 @@ Senior web developer: 8 years building and reviewing production Next.js, Supabas
 Connect your repository and services at [Gazzola.dev](https://Gazzola.dev) for personalized diagnosis, triage and planning.
 Bring in an expert for the hard parts, and handle the rest yourself with guidance and support.
 
-📺 Live at [Vids.Tube](https://Vids.Tube) daily at 7pm Eastern time
+📺 Live daily at 7pm Eastern time on my own live streaming platform: [Vids.Tube](https://Vids.Tube)
 
 📞 Available for video calls on [my Discord](https://discord.gg/BCJDKePEAk) daily between 4pm–7pm Eastern Time
 
