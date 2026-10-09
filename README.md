@@ -7,7 +7,7 @@ Bring in an expert for the hard parts, and handle the rest yourself with guidanc
 
 🚀 2 years experience at a Y Combinator startup and 7 months at a Blackbird VC startup
 
-📺 Live on my own live-streaming platform daily at 7pm Eastern time
+📺 Live at [Vids.Tube](https://Vids.Tube) daily at 7pm Eastern time
 
 📞 Available for video calls daily between 4pm–7pm Eastern Time
 
