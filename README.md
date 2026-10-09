@@ -1,4 +1,4 @@
-## From vibe to viable with a senior on your side | Claude Code Next.js
+## From vibe to viable with a senior on your side | Claude Code advisor
 
 Your app is never finished, but the next step can always be clear.
 Senior web developer with 8 years building and reviewing production Next.js, Supabase and Postgres apps.
