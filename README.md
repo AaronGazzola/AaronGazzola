@@ -7,9 +7,7 @@ Senior web developer with 8 years building and reviewing production Next.js, Sup
 Connect your repository and services at [Gazzola.dev](https://Gazzola.dev) for personalized diagnosis, triage and planning.
 Bring in an expert for the hard parts, and handle the rest yourself with guidance and support.
 
-📺 Live daily at 7pm Eastern time on my own live streaming platform: [Vids.Tube](https://Vids.Tube)
-
-📞 Available for video calls daily between 4pm–7pm Eastern Time via [my Discord](https://discord.gg/BCJDKePEAk)
+🚀 2 years at a Y Combinator startup and 7 months at a Blackbird VC startup
 
 💾 Database architecture, RLS security and multi-tenant access control
 
@@ -17,6 +15,12 @@ Bring in an expert for the hard parts, and handle the rest yourself with guidanc
 
 ✅ Privacy policy, terms of service and data retention
 
-🚀 2 years at a Y Combinator startup and 7 months at a Blackbird VC startup
+---
+
+📺 Live daily at 7pm Eastern time on my own live streaming platform: [Vids.Tube](https://Vids.Tube)
+
+📞 Available for video calls daily between 4pm–7pm Eastern Time via [my Discord](https://discord.gg/BCJDKePEAk)
+
+---
 
 Tech stack: Supabase, PostgreSQL, Next.js, Vite, Tailwind, Shadcn, Trigger.dev, Vercel, Claude Code
