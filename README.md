@@ -19,7 +19,7 @@ Bring in an expert for the hard parts, and handle the rest yourself with guidanc
 
 📺 Live daily at 7pm Eastern time on my own live streaming platform: [Vids.Tube](https://Vids.Tube)
 
-📞 Available for video calls daily between 4pm–7pm Eastern Time: [Discord](https://discord.gg/BCJDKePEAk)
+📞 Available for video calls daily between 3pm–6pm Eastern Time: [Discord](https://discord.gg/BCJDKePEAk)
 
 ---
 
