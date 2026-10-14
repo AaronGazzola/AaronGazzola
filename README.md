@@ -17,7 +17,7 @@ Connect your repository and services at [Gazzola.dev](https://Gazzola.dev) for p
 
 ---
 
-📺 Live daily at 8pm Eastern time on my own live streaming platform: [Vids.Tube](https://Vids.Tube)
+📺 Live daily at 8:30pm Eastern time on my own live streaming platform: [Vids.Tube](https://Vids.Tube)
 
 📞 Available for video calls daily between 1:00pm–5:00pm Eastern Time: [Discord](https://discord.gg/BCJDKePEAk)
 
